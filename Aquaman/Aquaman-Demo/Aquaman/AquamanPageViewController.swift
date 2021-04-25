@@ -70,7 +70,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     private let headerContentView = UIView()
     private let menuContentView = UIView()
     private var menuViewHeight: CGFloat = 0.0
-    internal var menuViewPinHeight: CGFloat = 0.0
+
     internal var sillValue: CGFloat = 0.0
     private var childControllerCount = 0
     private var countArray = [Int]()
@@ -147,11 +147,10 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         headerViewHeight = headerViewHeightFor(self)
         
         menuViewHeight = menuViewHeightFor(self)
-        menuViewPinHeight = menuViewPinHeightFor(self)
-        
+
         childControllerCount = numberOfViewControllers(in: self)
         
-        sillValue = headerViewHeight - menuViewPinHeight
+        sillValue = headerViewHeight
         countArray = Array(stride(from: 0, to: childControllerCount, by: 1))
     }
     
@@ -201,7 +200,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         
         mainScrollView.addSubview(contentScrollView)
         
-        let contentScrollViewHeight = contentScrollView.heightAnchor.constraint(equalTo: mainScrollView.heightAnchor, constant: -menuViewHeight - menuViewPinHeight)
+        let contentScrollViewHeight = contentScrollView.heightAnchor.constraint(equalTo: mainScrollView.heightAnchor, constant: -menuViewHeight)
         contentScrollViewConstraint = contentScrollViewHeight
         NSLayoutConstraint.activate([
             contentScrollView.leadingAnchor.constraint(equalTo: mainScrollView.leadingAnchor),
@@ -240,7 +239,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         }
         headerViewConstraint?.constant = headerViewHeight
         menuViewConstraint?.constant = menuViewHeight
-        contentScrollViewConstraint?.constant = -menuViewHeight - menuViewPinHeight
+        contentScrollViewConstraint?.constant = -menuViewHeight
     }
     
     internal func clear() {
@@ -430,11 +429,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         return 0
     }
     
-    open func menuViewPinHeightFor(_ pageController: AquamanPageViewController) -> CGFloat {
-        return 0
-    }
-    
-    
+
     open func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidScroll scrollView: UIScrollView) {
         
     }

@@ -34,7 +34,7 @@ protocol AMPageControllerDataSource: class {
     func headerViewHeightFor(_ pageController: AquamanPageViewController) -> CGFloat
     func menuViewFor(_ pageController: AquamanPageViewController) -> UIView
     func menuViewHeightFor(_ pageController: AquamanPageViewController) -> CGFloat
-    func menuViewPinHeightFor(_ pageController: AquamanPageViewController) -> CGFloat
+    
 }
 
 protocol AMPageControllerDelegate: class {

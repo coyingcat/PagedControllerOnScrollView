@@ -63,13 +63,13 @@ class PageViewController: AquamanPageViewController {
     }()
     
     private let headerView = HeaderView()
-    var headerViewHeight: CGFloat = 200.0
+
     override func headerViewFor(_ pageController: AquamanPageViewController) -> UIView {
         return headerView
     }
     
     override func headerViewHeightFor(_ pageController: AquamanPageViewController) -> CGFloat {
-        return headerViewHeight
+        return 200.0
     }
     
     override func numberOfViewControllers(in pageController: AquamanPageViewController) -> Int {
@@ -97,12 +97,7 @@ class PageViewController: AquamanPageViewController {
         return 54.0
     }
     
-    override func menuViewPinHeightFor(_ pageController: AquamanPageViewController) -> CGFloat {
-        return 0.0
-    }
 
-
-    
     override func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidScroll scrollView: UIScrollView) {
         menuView.updateLayout(scrollView)
     }
