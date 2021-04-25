@@ -47,6 +47,16 @@
                ReferencedContainer = "container:Aquaman-Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2628CFBE26350A04009957E0"
+               BuildableName = "AquamanTests.xctest"
+               BlueprintName = "AquamanTests"
+               ReferencedContainer = "container:Aquaman-Demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
