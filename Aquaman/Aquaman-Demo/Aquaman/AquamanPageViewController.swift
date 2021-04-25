@@ -160,7 +160,14 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         mainScrollView.menuViewHeight = menuViewHeight
         mainScrollView.contentInsetAdjustmentBehavior = .never
         
+        
         view.addSubview(mainScrollView)
+
+        mainScrollView.addSubs([ contentScrollView, contentStackView,
+                                 menuContentView, headerContentView])
+
+        
+        
         let contentInset = contentInsetFor(self)
         let constraints = [
             mainScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: contentInset.top),
@@ -171,8 +178,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         mainScrollViewConstraints = constraints
         NSLayoutConstraint.activate(constraints)
         
-        
-        mainScrollView.addSubview(headerContentView)
         headerContentView.translatesAutoresizingMaskIntoConstraints = false
         
         let headerContentViewHeight = headerContentView.heightAnchor.constraint(equalToConstant: headerViewHeight)
@@ -184,7 +189,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             headerContentViewHeight,
         ])
         
-        mainScrollView.addSubview(menuContentView)
         menuContentView.translatesAutoresizingMaskIntoConstraints = false
         
         let menuContentViewHeight = menuContentView.heightAnchor.constraint(equalToConstant: menuViewHeight)
@@ -197,9 +201,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             menuContentViewHeight
         ])
         
-        
-        mainScrollView.addSubview(contentScrollView)
-        
         let contentScrollViewHeight = contentScrollView.heightAnchor.constraint(equalTo: mainScrollView.heightAnchor, constant: -menuViewHeight)
         contentScrollViewConstraint = contentScrollViewHeight
         NSLayoutConstraint.activate([
@@ -211,9 +212,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             contentScrollViewHeight
             ])
         
-        
-        contentScrollView.addSubview(contentStackView)
-        
         NSLayoutConstraint.activate([
             contentStackView.leadingAnchor.constraint(equalTo: contentScrollView.leadingAnchor),
             contentStackView.trailingAnchor.constraint(equalTo: contentScrollView.trailingAnchor),
@@ -222,8 +220,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             contentStackView.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor)
         ])
         
-        mainScrollView.bringSubviewToFront(menuContentView)
-        mainScrollView.bringSubviewToFront(headerContentView)
+        
     }
     
     internal func updateOriginContent() {
