@@ -34,12 +34,6 @@ public enum MenuStyle {
     case contentInset(UIEdgeInsets)
     case sliderStyle(SliderViewStyle)
     case bottomLineStyle(BottomLineViewStyle)
-    case switchStyle(MenuSwitchStyle)
-}
-
-public enum MenuSwitchStyle {
-    case line
-    case telescopic // 伸缩
 }
 
 public protocol TridentMenuViewDelegate: class {
@@ -115,9 +109,8 @@ public class TridentMenuView: UIView {
     }
     public private(set) lazy var sliderViewStyle = SliderViewStyle(view: sliderView)
     public private(set) lazy var bottomLineViewStyle = BottomLineViewStyle(view: bottomLineView)
-    private var switchStyle = MenuSwitchStyle.line
     
-    public init(parts: MenuStyle...) {
+    public init(parts: MenuStyle...){
         super.init(frame: .zero)
         for part in parts {
             switch part {
@@ -136,8 +129,6 @@ public class TridentMenuView: UIView {
             case .sliderStyle(let style):
                 sliderViewStyle = style
                 sliderViewStyle.targetView = sliderView
-            case .switchStyle(let style):
-                switchStyle = style
             case .bottomLineStyle(let style):
                 bottomLineViewStyle = style
                 bottomLineViewStyle.targetView = bottomLineView
@@ -181,10 +172,7 @@ public class TridentMenuView: UIView {
             stackView.layoutIfNeeded()
             let labelWidth = stackView.arrangedSubviews.first?.bounds.width ?? 0.0
             var progressWidth: CGFloat = 0
-            switch switchStyle {
-            case .telescopic:
-                progressWidth = sliderViewStyle.originWidth
-            default:
+         
                 switch sliderViewStyle.shape {
                 case .line:
                     progressWidth = labelWidth + sliderViewStyle.extraWidth
@@ -193,7 +181,7 @@ public class TridentMenuView: UIView {
                 case .triangle:
                     progressWidth = sliderViewStyle.height + sliderViewStyle.extraWidth
                 }
-            }
+            
             
             let offset = stackView.arrangedSubviews.first?.frame.midX ?? 0.0
             sliderWidth?.constant = progressWidth
@@ -377,8 +365,7 @@ public class TridentMenuView: UIView {
         let currentWidth = stackView.arrangedSubviews[currentIndex].bounds.width
         let leadingMargin = stackView.arrangedSubviews[currentIndex].frame.midX
 
-        switch switchStyle {
-        case .line:
+
             switch sliderViewStyle.shape {
             case .line:
                 sliderWidth?.constant = widthDifference * scrollRate + currentWidth + sliderViewStyle.extraWidth
@@ -388,11 +375,6 @@ public class TridentMenuView: UIView {
                 sliderWidth?.constant = sliderViewStyle.height
             }
             sliderCenterX?.constant = leadingMargin + itemMidSpace * scrollRate
-        case .telescopic:
-            let rate = (scrollRate <= 0.5 ? scrollRate : (1.0 - scrollRate)) * sliderViewStyle.elasticValue
-            sliderWidth?.constant = max(centerXDifference * rate + sliderViewStyle.originWidth, 0)
-            sliderCenterX?.constant = leadingMargin + itemMidSpace * scrollRate
-        }
     }
 }
 

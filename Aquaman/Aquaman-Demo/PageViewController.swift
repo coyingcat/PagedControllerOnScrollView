@@ -39,7 +39,6 @@ class PageViewController: AquamanPageViewController {
             .selectedTextColor(UIColor.blue),
             .normalTextFont(UIFont.systemFont(ofSize: 15.0)),
             .selectedTextFont(UIFont.systemFont(ofSize: 15.0, weight: .medium)),
-            .switchStyle(.line),
             .sliderStyle(
                 SliderViewStyle(parts:
                     .backgroundColor(.blue),
