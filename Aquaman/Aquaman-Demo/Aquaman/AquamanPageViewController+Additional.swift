@@ -97,7 +97,7 @@ extension AquamanPageViewController: UIScrollViewDelegate {
         guard scrollView == mainScrollView else {
             return false
         }
-        currentChildScrollView?.setContentOffset(currentChildScrollView?.am_originOffset ?? .zero, animated: true)
+        currentChildScrollView?.setContentOffset(currentChildScrollView.offset, animated: true)
         return true
     }
     
@@ -107,7 +107,7 @@ extension AquamanPageViewController: UIScrollViewDelegate {
 
 extension AquamanPageViewController {
     internal func childScrollView(didScroll scrollView: UIScrollView){
-        let scrollOffset = (scrollView.am_originOffset ?? .zero)
+        let scrollOffset = scrollView.am_originOffset.val
         
         let offsetY = scrollView.contentOffset.y
         

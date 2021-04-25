@@ -350,7 +350,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         scrollView.am_originOffset = scrollView.contentOffset
         
         if mainScrollView.contentOffset.y < sillValue {
-            scrollView.contentOffset = scrollView.am_originOffset ?? .zero
+            scrollView.contentOffset = scrollView.am_originOffset.val
             scrollView.am_isCanScroll = false
             mainScrollView.am_isCanScroll = true
         }

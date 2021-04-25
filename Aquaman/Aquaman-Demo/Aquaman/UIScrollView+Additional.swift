@@ -54,3 +54,28 @@ extension UIScrollView {
         }
     }
 }
+
+
+
+extension Optional where Wrapped == CGPoint{
+    var val: CGPoint{
+        if let v = self{
+            return v
+        }
+        else{
+            return .zero
+        }
+    }
+}
+
+
+extension Optional where Wrapped == UIScrollView{
+    var offset: CGPoint{
+        if let v = self?.am_originOffset.val{
+            return v
+        }
+        else{
+            return .zero
+        }
+    }
+}
