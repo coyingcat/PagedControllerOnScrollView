@@ -261,9 +261,9 @@ public class TridentMenuView: UIView {
     private func initialize() {
         backgroundColor = .white
         clipsToBounds = true
-        addSubview(scrollView)
+        addSubs(scrollView, bottomLineView)
         
-        scrollView.addSubs(sliderView, stackView, bottomLineView)
+        scrollView.addSubs(sliderView, stackView)
         
         scrollViewConstraints = [
             scrollView.topAnchor.constraint(equalTo: topAnchor, constant: contentInset.top),
