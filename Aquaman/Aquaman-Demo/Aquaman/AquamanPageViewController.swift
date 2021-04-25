@@ -27,7 +27,7 @@ import UIKit
 
 open class AquamanPageViewController: UIViewController, AMPageControllerDataSource, AMPageControllerDelegate {
     
-    public private(set) var currentViewController: (UIViewController & AquamanChildViewController)?
+    public private(set) var currentViewController: AquamanController?
     public private(set) var currentIndex = 0
 
     lazy public private(set) var mainScrollView: AquaMainScrollView = {
@@ -270,7 +270,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     internal func clearMemoryCache() {
         countArray.forEach { (index) in
-            let viewController = memoryCache[index] as? (UIViewController & AquamanChildViewController)
+            let viewController = memoryCache[index] as? AquamanController
             let scrollView = viewController?.aquamanChildScrollView()
             scrollView?.am_originOffset = nil
         }
@@ -325,7 +325,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             return
         }
         
-        let cachedViewContoller = memoryCache[index] as? (UIViewController & AquamanChildViewController)
+        let cachedViewContoller = memoryCache[index] as? AquamanController
         let viewController = cachedViewContoller != nil ? cachedViewContoller : pageController(self, viewControllerAt: index)
         
         guard let targetViewController = viewController else {
@@ -397,9 +397,9 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     }
     
     
-    open func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> (UIViewController & AquamanChildViewController) {
+    open func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> AquamanController {
         assertionFailure("Sub-class must implement the AMPageControllerDataSource method")
-        return UIViewController() as! (UIViewController & AquamanChildViewController)
+        return UIViewController() as! AquamanController
     }
     
     open func numberOfViewControllers(in pageController: AquamanPageViewController) -> Int {
@@ -432,12 +432,12 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         
     }
     
-    open func pageController(_ pageController: AquamanPageViewController, willCache viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
+    open func pageController(_ pageController: AquamanPageViewController, willCache viewController: AquamanController, forItemAt index: Int) {
         
     }
     
     
-    open func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
+    open func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: AquamanController, forItemAt index: Int) {
         
     }
     

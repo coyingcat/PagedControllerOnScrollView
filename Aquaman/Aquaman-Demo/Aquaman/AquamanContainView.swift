@@ -25,8 +25,12 @@
 
 import UIKit
 
+
+public
+typealias AquamanController = (UIViewController & AquamanChildViewController)
+
 class AquamanContainView: UIView {
-    weak var viewController: (UIViewController & AquamanChildViewController)?
+    weak var viewController: AquamanController?
     var isEmpty: Bool {
         return subviews.isEmpty
     }

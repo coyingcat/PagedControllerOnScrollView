@@ -28,7 +28,7 @@ import UIKit
 
 protocol AMPageControllerDataSource: class {
     
-    func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> (UIViewController & AquamanChildViewController)
+    func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> AquamanController
     func numberOfViewControllers(in pageController: AquamanPageViewController) -> Int
     func headerViewFor(_ pageController: AquamanPageViewController) -> UIView
     func headerViewHeightFor(_ pageController: AquamanPageViewController) -> CGFloat
@@ -52,7 +52,7 @@ protocol AMPageControllerDelegate: class {
     ///   - pageController: AquamanPageViewController
     ///   - viewController: target viewController
     ///   - index: target viewController's index
-    func pageController(_ pageController: AquamanPageViewController, willCache viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int)
+    func pageController(_ pageController: AquamanPageViewController, willCache viewController: AquamanController, forItemAt index: Int)
     
     /// Method call when viewController did display
     ///
@@ -60,7 +60,7 @@ protocol AMPageControllerDelegate: class {
     ///   - pageController: AquamanPageViewController
     ///   - viewController: target viewController
     ///   - index: target viewController's index
-    func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int)
+    func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: AquamanController, forItemAt index: Int)
     
     
     /// Method call when menuView is adsorption

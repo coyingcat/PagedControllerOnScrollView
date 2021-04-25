@@ -76,7 +76,7 @@ class PageViewController: AquamanPageViewController {
         return titles.count
     }
     
-    override func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> (UIViewController & AquamanChildViewController) {
+    override func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> AquamanController{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if index == 0 {
             return storyboard.instantiateViewController(withIdentifier: "SupermanViewController") as! SupermanViewController
@@ -107,7 +107,7 @@ class PageViewController: AquamanPageViewController {
     }
     
     
-    override func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
+    override func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: AquamanController, forItemAt index: Int) {
         menuView.checkState(animation: true)
     }
     
