@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2628CFC026350A04009957E0 /* Aquaman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFB726350A03009957E0 /* Aquaman.framework */; };
-		2628CFC726350A04009957E0 /* AquamanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFC626350A04009957E0 /* AquamanTests.swift */; };
 		2628CFC926350A04009957E0 /* Aquaman.h in Headers */ = {isa = PBXBuildFile; fileRef = 2628CFB926350A03009957E0 /* Aquaman.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2628CFCC26350A04009957E0 /* Aquaman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFB726350A03009957E0 /* Aquaman.framework */; };
 		2628CFCD26350A04009957E0 /* Aquaman.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFB726350A03009957E0 /* Aquaman.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -22,8 +20,6 @@
 		2628CFE826350A25009957E0 /* AquaMainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFDE26350A25009957E0 /* AquaMainScrollView.swift */; };
 		2628CFE926350A25009957E0 /* AquamanProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFDF26350A25009957E0 /* AquamanProtocol.swift */; };
 		2628CFEA26350A25009957E0 /* AquamanPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFE026350A25009957E0 /* AquamanPageViewController.swift */; };
-		2628D00126350C2F009957E0 /* Trident.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFF826350C2F009957E0 /* Trident.framework */; };
-		2628D00826350C2F009957E0 /* TridentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D00726350C2F009957E0 /* TridentTests.swift */; };
 		2628D00A26350C2F009957E0 /* Trident.h in Headers */ = {isa = PBXBuildFile; fileRef = 2628CFFA26350C2F009957E0 /* Trident.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2628D00D26350C2F009957E0 /* Trident.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFF826350C2F009957E0 /* Trident.framework */; };
 		2628D00E26350C2F009957E0 /* Trident.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFF826350C2F009957E0 /* Trident.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -48,40 +44,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2628CFC126350A04009957E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2628CFB626350A03009957E0;
-			remoteInfo = Aquaman;
-		};
-		2628CFC326350A04009957E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF7F9F1C21E37EEB000F4317;
-			remoteInfo = "Aquaman-Demo";
-		};
 		2628CFCA26350A04009957E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2628CFB626350A03009957E0;
 			remoteInfo = Aquaman;
-		};
-		2628D00226350C2F009957E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2628CFF726350C2F009957E0;
-			remoteInfo = Trident;
-		};
-		2628D00426350C2F009957E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF7F9F1C21E37EEB000F4317;
-			remoteInfo = "Aquaman-Demo";
 		};
 		2628D00B26350C2F009957E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -112,9 +80,6 @@
 		2628CFB726350A03009957E0 /* Aquaman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aquaman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2628CFB926350A03009957E0 /* Aquaman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aquaman.h; sourceTree = "<group>"; };
 		2628CFBA26350A03009957E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2628CFBF26350A04009957E0 /* AquamanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquamanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2628CFC626350A04009957E0 /* AquamanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquamanTests.swift; sourceTree = "<group>"; };
-		2628CFC826350A04009957E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2628CFD726350A25009957E0 /* AquamanPageViewController+Additional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AquamanPageViewController+Additional.swift"; sourceTree = "<group>"; };
 		2628CFD826350A25009957E0 /* AquamanChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AquamanChildViewController.swift; sourceTree = "<group>"; };
 		2628CFD926350A25009957E0 /* Aquaman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aquaman.h; sourceTree = "<group>"; };
@@ -128,9 +93,6 @@
 		2628CFF826350C2F009957E0 /* Trident.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trident.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2628CFFA26350C2F009957E0 /* Trident.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trident.h; sourceTree = "<group>"; };
 		2628CFFB26350C2F009957E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2628D00026350C2F009957E0 /* TridentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TridentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2628D00726350C2F009957E0 /* TridentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TridentTests.swift; sourceTree = "<group>"; };
-		2628D00926350C2F009957E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2628D01A26350C71009957E0 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		2628D01B26350C71009957E0 /* ProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewStyle.swift; sourceTree = "<group>"; };
 		2628D01C26350C71009957E0 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
@@ -160,26 +122,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2628CFBC26350A04009957E0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2628CFC026350A04009957E0 /* Aquaman.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2628CFF526350C2F009957E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2628CFFD26350C2F009957E0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2628D00126350C2F009957E0 /* Trident.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,15 +148,6 @@
 				2628CFBA26350A03009957E0 /* Info.plist */,
 			);
 			path = Aquaman;
-			sourceTree = "<group>";
-		};
-		2628CFC526350A04009957E0 /* AquamanTests */ = {
-			isa = PBXGroup;
-			children = (
-				2628CFC626350A04009957E0 /* AquamanTests.swift */,
-				2628CFC826350A04009957E0 /* Info.plist */,
-			);
-			path = AquamanTests;
 			sourceTree = "<group>";
 		};
 		2628CFD626350A25009957E0 /* Aquaman */ = {
@@ -239,15 +176,6 @@
 			path = Trident;
 			sourceTree = "<group>";
 		};
-		2628D00626350C2F009957E0 /* TridentTests */ = {
-			isa = PBXGroup;
-			children = (
-				2628D00726350C2F009957E0 /* TridentTests.swift */,
-				2628D00926350C2F009957E0 /* Info.plist */,
-			);
-			path = TridentTests;
-			sourceTree = "<group>";
-		};
 		2628D01926350C71009957E0 /* Trident */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,12 +198,8 @@
 				2628CFB126350964009957E0 /* Aquaman-Demo.app */,
 				2628CFB726350A03009957E0 /* Aquaman.framework */,
 				2628CFB826350A03009957E0 /* Aquaman */,
-				2628CFBF26350A04009957E0 /* AquamanTests.xctest */,
-				2628CFC526350A04009957E0 /* AquamanTests */,
 				2628CFF826350C2F009957E0 /* Trident.framework */,
 				2628CFF926350C2F009957E0 /* Trident */,
-				2628D00026350C2F009957E0 /* TridentTests.xctest */,
-				2628D00626350C2F009957E0 /* TridentTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,25 +265,6 @@
 			productReference = 2628CFB726350A03009957E0 /* Aquaman.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2628CFBE26350A04009957E0 /* AquamanTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2628CFD326350A04009957E0 /* Build configuration list for PBXNativeTarget "AquamanTests" */;
-			buildPhases = (
-				2628CFBB26350A04009957E0 /* Sources */,
-				2628CFBC26350A04009957E0 /* Frameworks */,
-				2628CFBD26350A04009957E0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2628CFC226350A04009957E0 /* PBXTargetDependency */,
-				2628CFC426350A04009957E0 /* PBXTargetDependency */,
-			);
-			name = AquamanTests;
-			productName = AquamanTests;
-			productReference = 2628CFBF26350A04009957E0 /* AquamanTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		2628CFF726350C2F009957E0 /* Trident */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2628D00F26350C2F009957E0 /* Build configuration list for PBXNativeTarget "Trident" */;
@@ -377,25 +282,6 @@
 			productName = Trident;
 			productReference = 2628CFF826350C2F009957E0 /* Trident.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		2628CFFF26350C2F009957E0 /* TridentTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2628D01226350C2F009957E0 /* Build configuration list for PBXNativeTarget "TridentTests" */;
-			buildPhases = (
-				2628CFFC26350C2F009957E0 /* Sources */,
-				2628CFFD26350C2F009957E0 /* Frameworks */,
-				2628CFFE26350C2F009957E0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2628D00326350C2F009957E0 /* PBXTargetDependency */,
-				2628D00526350C2F009957E0 /* PBXTargetDependency */,
-			);
-			name = TridentTests;
-			productName = TridentTests;
-			productReference = 2628D00026350C2F009957E0 /* TridentTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */ = {
 			isa = PBXNativeTarget;
@@ -432,16 +318,8 @@
 					2628CFB626350A03009957E0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					2628CFBE26350A04009957E0 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DF7F9F1C21E37EEB000F4317;
-					};
 					2628CFF726350C2F009957E0 = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					2628CFFF26350C2F009957E0 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DF7F9F1C21E37EEB000F4317;
 					};
 					DF7F9F1C21E37EEB000F4317 = {
 						CreatedOnToolsVersion = 10.1;
@@ -465,9 +343,7 @@
 			targets = (
 				DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */,
 				2628CFB626350A03009957E0 /* Aquaman */,
-				2628CFBE26350A04009957E0 /* AquamanTests */,
 				2628CFF726350C2F009957E0 /* Trident */,
-				2628CFFF26350C2F009957E0 /* TridentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -480,21 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2628CFBD26350A04009957E0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2628CFF626350C2F009957E0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2628CFFE26350C2F009957E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -530,14 +392,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2628CFBB26350A04009957E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2628CFC726350A04009957E0 /* AquamanTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2628CFF426350C2F009957E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,14 +403,6 @@
 				2628D02626350C71009957E0 /* BottomLineViewStyle.swift in Sources */,
 				2628D02426350C71009957E0 /* MenuItemView.swift in Sources */,
 				2628D02326350C71009957E0 /* ProgressViewStyle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2628CFFC26350C2F009957E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2628D00826350C2F009957E0 /* TridentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,30 +423,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2628CFC226350A04009957E0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2628CFB626350A03009957E0 /* Aquaman */;
-			targetProxy = 2628CFC126350A04009957E0 /* PBXContainerItemProxy */;
-		};
-		2628CFC426350A04009957E0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */;
-			targetProxy = 2628CFC326350A04009957E0 /* PBXContainerItemProxy */;
-		};
 		2628CFCB26350A04009957E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2628CFB626350A03009957E0 /* Aquaman */;
 			targetProxy = 2628CFCA26350A04009957E0 /* PBXContainerItemProxy */;
-		};
-		2628D00326350C2F009957E0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2628CFF726350C2F009957E0 /* Trident */;
-			targetProxy = 2628D00226350C2F009957E0 /* PBXContainerItemProxy */;
-		};
-		2628D00526350C2F009957E0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */;
-			targetProxy = 2628D00426350C2F009957E0 /* PBXContainerItemProxy */;
 		};
 		2628D00C26350C2F009957E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -677,48 +503,6 @@
 			};
 			name = Release;
 		};
-		2628CFD026350A04009957E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D878P8TW6L;
-				INFOPLIST_FILE = AquamanTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.AquamanTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aquaman-Demo.app/Aquaman-Demo";
-			};
-			name = Debug;
-		};
-		2628CFD126350A04009957E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D878P8TW6L;
-				INFOPLIST_FILE = AquamanTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.AquamanTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aquaman-Demo.app/Aquaman-Demo";
-			};
-			name = Release;
-		};
 		2628D01026350C2F009957E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -772,48 +556,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2628D01326350C2F009957E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D878P8TW6L;
-				INFOPLIST_FILE = TridentTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.TridentTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aquaman-Demo.app/Aquaman-Demo";
-			};
-			name = Debug;
-		};
-		2628D01426350C2F009957E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D878P8TW6L;
-				INFOPLIST_FILE = TridentTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.TridentTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aquaman-Demo.app/Aquaman-Demo";
 			};
 			name = Release;
 		};
@@ -987,29 +729,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2628CFD326350A04009957E0 /* Build configuration list for PBXNativeTarget "AquamanTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2628CFD026350A04009957E0 /* Debug */,
-				2628CFD126350A04009957E0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2628D00F26350C2F009957E0 /* Build configuration list for PBXNativeTarget "Trident" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2628D01026350C2F009957E0 /* Debug */,
 				2628D01126350C2F009957E0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2628D01226350C2F009957E0 /* Build configuration list for PBXNativeTarget "TridentTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2628D01326350C2F009957E0 /* Debug */,
-				2628D01426350C2F009957E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
