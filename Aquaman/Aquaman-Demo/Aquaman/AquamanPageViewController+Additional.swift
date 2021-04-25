@@ -27,41 +27,6 @@ import Foundation
 import UIKit
 
 extension AquamanPageViewController {
-    public func updateHeaderViewHeight(animated: Bool = false,
-                                       duration: TimeInterval = 0.25,
-                                       completion: ((Bool) -> Void)? = nil) {
-        
-        headerViewHeight = headerViewHeightFor(self)
-        sillValue = headerViewHeight - menuViewPinHeight
-        
-        mainScrollView.headerViewHeight = headerViewHeight
-        headerViewConstraint?.constant = headerViewHeight
-        
-        var manualHandel = false
-        if mainScrollView.contentOffset.y < sillValue {
-            currentChildScrollView?.contentOffset = currentChildScrollView?.am_originOffset ?? .zero
-            currentChildScrollView?.am_isCanScroll = false
-            mainScrollView.am_isCanScroll = true
-            manualHandel = true
-        } else if mainScrollView.contentOffset.y == sillValue  {
-            mainScrollView.am_isCanScroll = false
-            manualHandel = true
-        }
-        let isAdsorption = (headerViewHeight <= 0.0) ? true : !mainScrollView.am_isCanScroll
-        if animated {
-            UIView.animate(withDuration: duration, animations: {
-                self.mainScrollView.layoutIfNeeded()
-                if manualHandel {
-                    self.pageController(self, menuView: isAdsorption)
-                }
-            }) { (finish) in
-                completion?(finish)
-            }
-        } else {
-            self.pageController(self, menuView: isAdsorption)
-            completion?(true)
-        }
-    }
     
     public func setSelect(index: Int, animation: Bool) {
         let offset = CGPoint(x: contentScrollView.bounds.width * CGFloat(index),
