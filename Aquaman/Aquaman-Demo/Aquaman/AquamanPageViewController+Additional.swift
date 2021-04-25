@@ -101,7 +101,9 @@ extension AquamanPageViewController: UIScrollViewDelegate {
         guard scrollView == mainScrollView else {
             return false
         }
+        // code scroll
         currentChildScrollView?.setContentOffset(currentChildScrollView.offset, animated: true)
+        // return scroll
         return true
     }
     
