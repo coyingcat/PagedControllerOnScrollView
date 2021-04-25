@@ -29,7 +29,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     public private(set) var currentViewController: (UIViewController & AquamanChildViewController)?
     public private(set) var currentIndex = 0
-    internal var originIndex = 0
 
     lazy public private(set) var mainScrollView: AquaMainScrollView = {
         let scrollView = AquaMainScrollView()
@@ -106,12 +105,10 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         setupOriginContent()
         setupDataSource()
         view.layoutIfNeeded()
-        if originIndex > 0 {
-            setSelect(index: originIndex, animation: false)
-        } else {
-            showChildViewContoller(at: originIndex)
-            didDisplayViewController(at: originIndex)
-        }
+        
+            showChildViewContoller(at: 0)
+            didDisplayViewController(at: 0)
+        
     }
     
     deinit {
@@ -146,7 +143,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     
     internal func obtainDataSource() {
-        originIndex = originIndexFor(self)
         
         headerViewHeight = headerViewHeightFor(self)
         
@@ -249,8 +245,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     internal func clear() {
         childScrollViewObservation?.invalidate()
-        
-        originIndex = 0
         currentIndex = 0
         
         mainScrollView.am_isCanScroll = true
@@ -433,10 +427,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     open func menuViewHeightFor(_ pageController: AquamanPageViewController) -> CGFloat {
         assertionFailure("Sub-class must implement the AMPageControllerDataSource method")
-        return 0
-    }
-    
-    open func originIndexFor(_ pageController: AquamanPageViewController) -> Int {
         return 0
     }
     

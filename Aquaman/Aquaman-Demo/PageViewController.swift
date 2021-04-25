@@ -89,11 +89,6 @@ class PageViewController: AquamanPageViewController {
         }
     }
     
-    // 默认显示的 ViewController 的 index
-    override func originIndexFor(_ pageController: AquamanPageViewController) -> Int {
-        return 0
-    }
-    
     override func menuViewFor(_ pageController: AquamanPageViewController) -> UIView {
         return menuView
     }
