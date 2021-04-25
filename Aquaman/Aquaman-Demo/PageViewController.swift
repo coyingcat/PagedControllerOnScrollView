@@ -101,7 +101,7 @@ class PageViewController: AquamanPageViewController {
         menuView.updateLayout(scrollView)
     }
     
-    override func pageController(_ pageController: AquamanPageViewController, menuView isAdsorption: Bool) {
+    override func pageController(attach pageController: AquamanPageViewController, menuView isAdsorption: Bool) {
         menuView.backgroundColor = isAdsorption ? .red : .white
     }
     

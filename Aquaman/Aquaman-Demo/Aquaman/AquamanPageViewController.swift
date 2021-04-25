@@ -421,7 +421,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         
     }
     
-    open func pageController(_ pageController: AquamanPageViewController, menuView isAdsorption: Bool) {
+    open func pageController(attach pageController: AquamanPageViewController, menuView isAdsorption: Bool) {
         
     }
 }

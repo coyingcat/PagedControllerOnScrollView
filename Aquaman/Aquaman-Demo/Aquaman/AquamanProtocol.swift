@@ -68,6 +68,6 @@ protocol AMPageControllerDelegate: class {
     /// - Parameters:
     ///   - pageController: AquamanPageViewController
     ///   - isAdsorption: is adsorption
-    func pageController(_ pageController: AquamanPageViewController, menuView isAdsorption: Bool)
+    func pageController(attach pageController: AquamanPageViewController, menuView isAdsorption: Bool)
     
 }
