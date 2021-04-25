@@ -107,9 +107,6 @@ class PageViewController: AquamanPageViewController {
     }
     
     
-    override func pageController(_ pageController: AquamanPageViewController, willDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
-    }
-    
     override func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
         menuView.checkState(animation: true)
     }

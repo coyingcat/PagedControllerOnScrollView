@@ -54,16 +54,6 @@ protocol AMPageControllerDelegate: class {
     ///   - index: target viewController's index
     func pageController(_ pageController: AquamanPageViewController, willCache viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int)
     
-    
-    /// Method call when viewController will display
-    ///
-    /// - Parameters:
-    ///   - pageController: AquamanPageViewController
-    ///   - viewController: target viewController
-    ///   - index: target viewController's index
-    func pageController(_ pageController: AquamanPageViewController, willDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int)
-    
-    
     /// Method call when viewController did display
     ///
     /// - Parameters:

@@ -331,8 +331,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         guard let targetViewController = viewController else {
             return
         }
-        pageController(self, willDisplay: targetViewController, forItemAt: index)
-        
         addChild(targetViewController)
         targetViewController.beginAppearanceTransition(true, animated: false)
         containView.addSubview(targetViewController.view)
@@ -382,7 +380,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     internal func layoutChildViewControlls() {
         countArray.forEach { (index) in
             let containView = containViews[index]
-            let isDisplayingInScreen = containView.displayingIn(view: view, containView: contentScrollView)
+            let isDisplayingInScreen = containView.displaying(in: view, containView: contentScrollView)
             isDisplayingInScreen ? showChildViewContoller(at: index) : removeChildViewController(at: index)
         }
     }
@@ -438,9 +436,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         
     }
     
-    open func pageController(_ pageController: AquamanPageViewController, willDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
-        
-    }
     
     open func pageController(_ pageController: AquamanPageViewController, didDisplay viewController: (UIViewController & AquamanChildViewController), forItemAt index: Int) {
         

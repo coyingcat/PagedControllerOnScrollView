@@ -31,7 +31,7 @@ class AquamanContainView: UIView {
         return subviews.isEmpty
     }
     
-    func displayingIn(view: UIView, containView: UIView) -> Bool {
+    func displaying(in view: UIView, containView: UIView) -> Bool {
         let convertedFrame = containView.convert(frame, to: view)
         return view.frame.intersects(convertedFrame)
     }
