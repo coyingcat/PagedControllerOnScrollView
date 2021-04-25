@@ -171,7 +171,7 @@ public class TridentMenuView: UIView {
             
             stackView.layoutIfNeeded()
             let labelWidth = stackView.arrangedSubviews.first?.bounds.width ?? 0.0
-            var progressWidth: CGFloat = 0
+            let progressWidth: CGFloat
          
                 switch sliderViewStyle.shape {
                 case .line:
