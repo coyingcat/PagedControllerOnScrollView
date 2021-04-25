@@ -1,32 +1,10 @@
 # Aquaman
 
-![License MIT](https://img.shields.io/dub/l/vibe-d.svg)
-![Pod version](http://img.shields.io/cocoapods/v/Aquaman.svg?style=flat)
-![Platform info](http://img.shields.io/cocoapods/p/LCNetwork.svg?style=flat)
-[![Support](https://img.shields.io/badge/support-iOS9.0+-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
-[![Swift 4.2](https://camo.githubusercontent.com/cc157628e33009bbb18f6e476955a0f641f407d9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53776966742d342e322d6f72616e67652e7376673f7374796c653d666c6174)](https://developer.apple.com/swift/)
+
 
 类似于淘票票首页，抖音、简书个人主页的嵌套滚动库
 
-![demo](./demo.gif)
 
-## Requirements
-
-- iOS 9.0+ 
-- Swift 4.2+
-- Xcode 10+
-
-
-
-## Installation
-
-#### [CocoaPods](http://cocoapods.org/) (recommended)
-
-```
-use_frameworks!
-
-pod 'Aquaman'
-```
 
 ## Usage
 
