@@ -21,3 +21,16 @@ extension UIFont {
         return fontDescriptor.object(forKey: .traits) as? [UIFontDescriptor.TraitKey: Any] ?? [:]
     }
 }
+
+
+
+
+
+extension UIView{
+    
+    func addSubs(_ views: UIView...){
+        views.forEach(addSubview(_:))
+    }
+
+
+}

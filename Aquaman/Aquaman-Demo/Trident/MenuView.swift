@@ -262,16 +262,17 @@ public class TridentMenuView: UIView {
         backgroundColor = .white
         clipsToBounds = true
         addSubview(scrollView)
-        let constraints = [
+        
+        scrollView.addSubs(sliderView, stackView, bottomLineView)
+        
+        scrollViewConstraints = [
             scrollView.topAnchor.constraint(equalTo: topAnchor, constant: contentInset.top),
             scrollView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: contentInset.left),
             scrollView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -contentInset.bottom),
             scrollView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -contentInset.right)
         ]
-        scrollViewConstraints = constraints
-        NSLayoutConstraint.activate(constraints)
+        NSLayoutConstraint.activate(scrollViewConstraints)
         
-        scrollView.addSubview(stackView)
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
@@ -279,9 +280,6 @@ public class TridentMenuView: UIView {
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             stackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         ])
-        
-        scrollView.addSubview(sliderView)
-        scrollView.sendSubviewToBack(sliderView)
         
         let sliderWidth: NSLayoutConstraint = sliderView.widthAnchor.constraint(equalToConstant: 0)
         let sliderCenterX: NSLayoutConstraint = sliderView.centerXAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0)
@@ -300,7 +298,6 @@ public class TridentMenuView: UIView {
         self.sliderWidth = sliderWidth
         self.sliderCenterX = sliderCenterX
         
-        addSubview(bottomLineView)
         NSLayoutConstraint.activate([
             bottomLineView.leadingAnchor.constraint(equalTo: leadingAnchor),
             bottomLineView.trailingAnchor.constraint(equalTo: trailingAnchor),
