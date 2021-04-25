@@ -48,13 +48,7 @@ extension SupermanViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        if indexPath.row == 0 {
-            cell.textLabel?.text = "Update head view height"
-        } else if indexPath.row == 1 {
-            cell.textLabel?.text = "Set select"
-        } else {
-            cell.textLabel?.text = "Title"
-        }
+        cell.textLabel?.text = "Title"
         return cell
     }
     

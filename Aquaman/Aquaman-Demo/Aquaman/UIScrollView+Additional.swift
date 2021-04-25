@@ -79,3 +79,19 @@ extension Optional where Wrapped == UIScrollView{
         }
     }
 }
+
+
+
+
+
+
+extension UIView{
+    
+    
+    func addSubs(_ views: [UIView]){
+        views.forEach(addSubview(_:))
+    }
+ 
+    
+    
+}

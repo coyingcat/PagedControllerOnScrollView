@@ -64,7 +64,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     private var contentScrollViewConstraint: NSLayoutConstraint?
     private var menuViewConstraint: NSLayoutConstraint?
     internal var headerViewConstraint: NSLayoutConstraint?
-    private var mainScrollViewConstraints: [NSLayoutConstraint] = []
+    private var mainScrollViewConstraints = [NSLayoutConstraint]()
     
     internal var headerViewHeight: CGFloat = 0.0
     private let headerContentView = UIView()
