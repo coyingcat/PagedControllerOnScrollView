@@ -110,9 +110,6 @@ class PageViewController: AquamanPageViewController {
         menuView.checkState(animation: true)
     }
     
-    override func contentInsetFor(_ pageController: AquamanPageViewController) -> UIEdgeInsets {
-        return UIEdgeInsets(top: -UIApplication.shared.statusBarFrame.height, left: 0, bottom: 0, right: 0)
-    }
 }
 
 

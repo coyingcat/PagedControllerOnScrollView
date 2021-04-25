@@ -70,9 +70,4 @@ protocol AMPageControllerDelegate: class {
     ///   - isAdsorption: is adsorption
     func pageController(_ pageController: AquamanPageViewController, menuView isAdsorption: Bool)
     
-    
-    /// Asks the delegate for the margins to apply to content.
-    /// - Parameter pageController: AquamanPageViewController
-    func contentInsetFor(_ pageController: AquamanPageViewController) -> UIEdgeInsets
-    
 }

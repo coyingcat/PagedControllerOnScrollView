@@ -167,7 +167,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         contentScrollView.addSubview(contentStackView)
         
         
-        let contentInset = contentInsetFor(self)
+        let contentInset = UIEdgeInsets.zero
         let constraints = [
             mainScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: contentInset.top),
             mainScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: contentInset.left),
@@ -423,10 +423,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     open func pageController(_ pageController: AquamanPageViewController, menuView isAdsorption: Bool) {
         
-    }
-    
-    open func contentInsetFor(_ pageController: AquamanPageViewController) -> UIEdgeInsets {
-        return .zero
     }
 }
 
