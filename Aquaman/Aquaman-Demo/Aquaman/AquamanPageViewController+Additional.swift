@@ -103,14 +103,19 @@ extension AquamanPageViewController: UIScrollViewDelegate {
     
 }
 
+
+
 extension AquamanPageViewController {
-    internal func childScrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.am_isCanScroll == false {
-            scrollView.contentOffset = scrollView.am_originOffset ?? .zero
-        }
+    internal func childScrollView(didScroll scrollView: UIScrollView){
+        let scrollOffset = (scrollView.am_originOffset ?? .zero)
+        
         let offsetY = scrollView.contentOffset.y
-        if offsetY <= (scrollView.am_originOffset ?? .zero).y {
-            scrollView.contentOffset = scrollView.am_originOffset ?? .zero
+        
+        if scrollView.am_isCanScroll == false {
+            scrollView.contentOffset = scrollOffset
+        }
+        else if offsetY <= scrollOffset.y {
+            scrollView.contentOffset = scrollOffset
             scrollView.am_isCanScroll = false
             mainScrollView.am_isCanScroll = true
         }

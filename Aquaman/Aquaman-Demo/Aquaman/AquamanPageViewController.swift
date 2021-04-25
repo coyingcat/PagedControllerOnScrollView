@@ -132,7 +132,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             guard let self = self, change.newValue != change.oldValue else {
                 return
             }
-            self.childScrollViewDidScroll(scrollView)
+            self.childScrollView(didScroll: scrollView)
         })
         childScrollViewObservation = keyValueObservation
         
