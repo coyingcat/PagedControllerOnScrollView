@@ -93,7 +93,7 @@ public class TridentMenuView: UIView {
             stackView.spacing = itemSpace
             layoutIfNeeded()
             layoutSlider()
-            scrollView.scrollToSuitablePosition(currentLabel, false)
+            scrollView.scrollTo(suitablePosition: currentLabel, false)
         }
     }
     private var normalTextColor = UIColor.darkGray
@@ -369,7 +369,7 @@ public class TridentMenuView: UIView {
         guard let currentLabel = currentLabel else {
             return
         }
-        scrollView.scrollToSuitablePosition(currentLabel, animation)
+        scrollView.scrollTo(suitablePosition: currentLabel, animation)
     }
     
     func layoutSlider(_ scrollRate: CGFloat = 0.0) {
