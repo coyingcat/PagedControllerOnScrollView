@@ -72,18 +72,6 @@ class PageViewController: AquamanPageViewController {
         menuView.titles = titles
     }
     
-    @objc func updateData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.headerView.isHidden = false
-            self.menuView.isHidden = false
-            self.menuView.titles = ["Superman", "Batman", "Wonder Woman", "The Flash"]
-            self.headerViewHeight = 120.0
-            self.menuViewHeight = 54.0
-            self.reloadData()
-            
-        }
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
