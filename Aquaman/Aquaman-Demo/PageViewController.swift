@@ -29,6 +29,9 @@ import Aquaman
 import Trident
 
 class PageViewController: AquamanPageViewController {
+    
+    
+    let titles = ["Superman", "Batman", "Wonder Woman", "哈 哈 哈"]
 
     lazy var menuView: TridentMenuView = {
         let view = TridentMenuView(parts:
@@ -58,7 +61,7 @@ class PageViewController: AquamanPageViewController {
     }()
     
     private let headerView = HeaderView()
-    private lazy var count = 4
+
     var headerViewHeight: CGFloat = 200.0
     private var menuViewHeight: CGFloat = 54.0
     
@@ -66,7 +69,7 @@ class PageViewController: AquamanPageViewController {
         super.viewDidLoad()
         
         menuView.contentInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
-        menuView.titles = ["Superman", "Batman", "Wonder Woman", "哈 哈 哈"]
+        menuView.titles = titles
     }
     
     @objc func updateData() {
@@ -74,7 +77,6 @@ class PageViewController: AquamanPageViewController {
             self.headerView.isHidden = false
             self.menuView.isHidden = false
             self.menuView.titles = ["Superman", "Batman", "Wonder Woman", "The Flash"]
-            self.count = self.menuView.titles.count
             self.headerViewHeight = 120.0
             self.menuViewHeight = 54.0
             self.reloadData()
@@ -96,7 +98,7 @@ class PageViewController: AquamanPageViewController {
     }
     
     override func numberOfViewControllers(in pageController: AquamanPageViewController) -> Int {
-        return count
+        return titles.count
     }
     
     override func pageController(_ pageController: AquamanPageViewController, viewControllerAt index: Int) -> (UIViewController & AquamanChildViewController) {
@@ -155,7 +157,7 @@ class PageViewController: AquamanPageViewController {
 
 extension PageViewController: TridentMenuViewDelegate {
     func menuView(_ menuView: TridentMenuView, didSelectedItemAt index: Int) {
-        guard index < count else {
+        guard index < titles.count else {
             return
         }
         setSelect(index: index, animation: true)
