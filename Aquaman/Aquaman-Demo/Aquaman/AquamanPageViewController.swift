@@ -403,7 +403,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         let offsetX = scrollView.contentOffset.x
         let index = Int(offsetX / scrollViewWidth)
         didDisplayViewController(at: index)
-        pageController(self, contentScrollViewDidEndScroll: contentScrollView)
     }
     
     
@@ -445,10 +444,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         return 0
     }
     
-    
-    open func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidEndScroll scrollView: UIScrollView) {
-        
-    }
     
     open func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidScroll scrollView: UIScrollView) {
         

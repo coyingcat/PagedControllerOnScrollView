@@ -45,15 +45,6 @@ protocol AMPageControllerDataSource: class {
 
 protocol AMPageControllerDelegate: class {
     
-    
-    /// Method call when contentScrollView did end scroll
-    ///
-    /// - Parameters:
-    ///   - pageController: AquamanPageViewController
-    ///   - scrollView: contentScrollView
-    func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidEndScroll scrollView: UIScrollView)
-    
-    
     /// Any offset changes in pageController's contentScrollView
     ///
     /// - Parameters:
