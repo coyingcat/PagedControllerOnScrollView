@@ -57,26 +57,13 @@ class PageViewController: AquamanPageViewController {
             )
         )
         view.delegate = self
+        view.contentInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
+        view.titles = titles
         return view
     }()
     
     private let headerView = HeaderView()
-
     var headerViewHeight: CGFloat = 200.0
-    private var menuViewHeight: CGFloat = 54.0
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        menuView.contentInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
-        menuView.titles = titles
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
     override func headerViewFor(_ pageController: AquamanPageViewController) -> UIView {
         return headerView
     }
@@ -112,7 +99,7 @@ class PageViewController: AquamanPageViewController {
     }
     
     override func menuViewHeightFor(_ pageController: AquamanPageViewController) -> CGFloat {
-        return menuViewHeight
+        return 54.0
     }
     
     override func menuViewPinHeightFor(_ pageController: AquamanPageViewController) -> CGFloat {
