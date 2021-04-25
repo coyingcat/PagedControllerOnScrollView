@@ -163,9 +163,8 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         
         view.addSubview(mainScrollView)
 
-        mainScrollView.addSubs([ contentScrollView, contentStackView,
-                                 menuContentView, headerContentView])
-
+        mainScrollView.addSubs([ contentScrollView, menuContentView, headerContentView])
+        contentScrollView.addSubview(contentStackView)
         
         
         let contentInset = contentInsetFor(self)
