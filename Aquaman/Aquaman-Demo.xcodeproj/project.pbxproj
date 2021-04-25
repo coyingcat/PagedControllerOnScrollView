@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,19 @@
 		2628CFE826350A25009957E0 /* AquaMainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFDE26350A25009957E0 /* AquaMainScrollView.swift */; };
 		2628CFE926350A25009957E0 /* AquamanProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFDF26350A25009957E0 /* AquamanProtocol.swift */; };
 		2628CFEA26350A25009957E0 /* AquamanPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628CFE026350A25009957E0 /* AquamanPageViewController.swift */; };
+		2628D00126350C2F009957E0 /* Trident.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFF826350C2F009957E0 /* Trident.framework */; };
+		2628D00826350C2F009957E0 /* TridentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D00726350C2F009957E0 /* TridentTests.swift */; };
+		2628D00A26350C2F009957E0 /* Trident.h in Headers */ = {isa = PBXBuildFile; fileRef = 2628CFFA26350C2F009957E0 /* Trident.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2628D00D26350C2F009957E0 /* Trident.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFF826350C2F009957E0 /* Trident.framework */; };
+		2628D00E26350C2F009957E0 /* Trident.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2628CFF826350C2F009957E0 /* Trident.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2628D02226350C71009957E0 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D01A26350C71009957E0 /* UIScrollView.swift */; };
+		2628D02326350C71009957E0 /* ProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D01B26350C71009957E0 /* ProgressViewStyle.swift */; };
+		2628D02426350C71009957E0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D01C26350C71009957E0 /* MenuItemView.swift */; };
+		2628D02526350C71009957E0 /* Trident.h in Headers */ = {isa = PBXBuildFile; fileRef = 2628D01D26350C71009957E0 /* Trident.h */; };
+		2628D02626350C71009957E0 /* BottomLineViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D01E26350C71009957E0 /* BottomLineViewStyle.swift */; };
+		2628D02726350C71009957E0 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D01F26350C71009957E0 /* UIColor+RGB.swift */; };
+		2628D02826350C71009957E0 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D02026350C71009957E0 /* UIFont.swift */; };
+		2628D02926350C71009957E0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628D02126350C71009957E0 /* MenuView.swift */; };
 		DF7AC0272320BB9E002E595E /* TheFlashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7AC0262320BB9E002E595E /* TheFlashViewController.swift */; };
 		DF7F9F2121E37EEB000F4317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F9F2021E37EEB000F4317 /* AppDelegate.swift */; };
 		DF7F9F2821E37EEC000F4317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7F9F2721E37EEC000F4317 /* Assets.xcassets */; };
@@ -32,7 +45,6 @@
 		DF7F9F4521E37FAA000F4317 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F9F3921E37FA9000F4317 /* PageViewController.swift */; };
 		DF7F9F4721E37FAA000F4317 /* WonderWomanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F9F3B21E37FA9000F4317 /* WonderWomanViewController.swift */; };
 		DF7F9F4B21E37FBB000F4317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7F9F4A21E37FBB000F4317 /* Main.storyboard */; };
-		DF931184250C7D5600870847 /* Trident in Frameworks */ = {isa = PBXBuildFile; productRef = DF931183250C7D5600870847 /* Trident */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +69,27 @@
 			remoteGlobalIDString = 2628CFB626350A03009957E0;
 			remoteInfo = Aquaman;
 		};
+		2628D00226350C2F009957E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2628CFF726350C2F009957E0;
+			remoteInfo = Trident;
+		};
+		2628D00426350C2F009957E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7F9F1C21E37EEB000F4317;
+			remoteInfo = "Aquaman-Demo";
+		};
+		2628D00B26350C2F009957E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7F9F1521E37EEB000F4317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2628CFF726350C2F009957E0;
+			remoteInfo = Trident;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +100,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2628CFCD26350A04009957E0 /* Aquaman.framework in Embed Frameworks */,
+				2628D00E26350C2F009957E0 /* Trident.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +125,20 @@
 		2628CFDE26350A25009957E0 /* AquaMainScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AquaMainScrollView.swift; sourceTree = "<group>"; };
 		2628CFDF26350A25009957E0 /* AquamanProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AquamanProtocol.swift; sourceTree = "<group>"; };
 		2628CFE026350A25009957E0 /* AquamanPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AquamanPageViewController.swift; sourceTree = "<group>"; };
+		2628CFF826350C2F009957E0 /* Trident.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trident.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2628CFFA26350C2F009957E0 /* Trident.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trident.h; sourceTree = "<group>"; };
+		2628CFFB26350C2F009957E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2628D00026350C2F009957E0 /* TridentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TridentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2628D00726350C2F009957E0 /* TridentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TridentTests.swift; sourceTree = "<group>"; };
+		2628D00926350C2F009957E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2628D01A26350C71009957E0 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		2628D01B26350C71009957E0 /* ProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewStyle.swift; sourceTree = "<group>"; };
+		2628D01C26350C71009957E0 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		2628D01D26350C71009957E0 /* Trident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trident.h; sourceTree = "<group>"; };
+		2628D01E26350C71009957E0 /* BottomLineViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomLineViewStyle.swift; sourceTree = "<group>"; };
+		2628D01F26350C71009957E0 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		2628D02026350C71009957E0 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		2628D02126350C71009957E0 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		DF7AC0262320BB9E002E595E /* TheFlashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFlashViewController.swift; sourceTree = "<group>"; };
 		DF7F9F2021E37EEB000F4317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF7F9F2721E37EEC000F4317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,12 +168,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2628CFF526350C2F009957E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2628CFFD26350C2F009957E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2628D00126350C2F009957E0 /* Trident.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF7F9F1A21E37EEB000F4317 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2628CFCC26350A04009957E0 /* Aquaman.framework in Frameworks */,
-				DF931184250C7D5600870847 /* Trident in Frameworks */,
+				2628D00D26350C2F009957E0 /* Trident.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +230,39 @@
 			path = Aquaman;
 			sourceTree = "<group>";
 		};
+		2628CFF926350C2F009957E0 /* Trident */ = {
+			isa = PBXGroup;
+			children = (
+				2628CFFA26350C2F009957E0 /* Trident.h */,
+				2628CFFB26350C2F009957E0 /* Info.plist */,
+			);
+			path = Trident;
+			sourceTree = "<group>";
+		};
+		2628D00626350C2F009957E0 /* TridentTests */ = {
+			isa = PBXGroup;
+			children = (
+				2628D00726350C2F009957E0 /* TridentTests.swift */,
+				2628D00926350C2F009957E0 /* Info.plist */,
+			);
+			path = TridentTests;
+			sourceTree = "<group>";
+		};
+		2628D01926350C71009957E0 /* Trident */ = {
+			isa = PBXGroup;
+			children = (
+				2628D01A26350C71009957E0 /* UIScrollView.swift */,
+				2628D01B26350C71009957E0 /* ProgressViewStyle.swift */,
+				2628D01C26350C71009957E0 /* MenuItemView.swift */,
+				2628D01D26350C71009957E0 /* Trident.h */,
+				2628D01E26350C71009957E0 /* BottomLineViewStyle.swift */,
+				2628D01F26350C71009957E0 /* UIColor+RGB.swift */,
+				2628D02026350C71009957E0 /* UIFont.swift */,
+				2628D02126350C71009957E0 /* MenuView.swift */,
+			);
+			path = Trident;
+			sourceTree = "<group>";
+		};
 		DF7F9F1421E37EEB000F4317 = {
 			isa = PBXGroup;
 			children = (
@@ -176,12 +272,17 @@
 				2628CFB826350A03009957E0 /* Aquaman */,
 				2628CFBF26350A04009957E0 /* AquamanTests.xctest */,
 				2628CFC526350A04009957E0 /* AquamanTests */,
+				2628CFF826350C2F009957E0 /* Trident.framework */,
+				2628CFF926350C2F009957E0 /* Trident */,
+				2628D00026350C2F009957E0 /* TridentTests.xctest */,
+				2628D00626350C2F009957E0 /* TridentTests */,
 			);
 			sourceTree = "<group>";
 		};
 		DF7F9F1F21E37EEB000F4317 /* Aquaman-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2628D01926350C71009957E0 /* Trident */,
 				2628CFD626350A25009957E0 /* Aquaman */,
 				DF7F9F2021E37EEB000F4317 /* AppDelegate.swift */,
 				DF7F9F3921E37FA9000F4317 /* PageViewController.swift */,
@@ -207,6 +308,15 @@
 			files = (
 				2628CFC926350A04009957E0 /* Aquaman.h in Headers */,
 				2628CFE326350A25009957E0 /* Aquaman.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2628CFF326350C2F009957E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2628D00A26350C2F009957E0 /* Trident.h in Headers */,
+				2628D02526350C71009957E0 /* Trident.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +360,43 @@
 			productReference = 2628CFBF26350A04009957E0 /* AquamanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2628CFF726350C2F009957E0 /* Trident */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2628D00F26350C2F009957E0 /* Build configuration list for PBXNativeTarget "Trident" */;
+			buildPhases = (
+				2628CFF326350C2F009957E0 /* Headers */,
+				2628CFF426350C2F009957E0 /* Sources */,
+				2628CFF526350C2F009957E0 /* Frameworks */,
+				2628CFF626350C2F009957E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trident;
+			productName = Trident;
+			productReference = 2628CFF826350C2F009957E0 /* Trident.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2628CFFF26350C2F009957E0 /* TridentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2628D01226350C2F009957E0 /* Build configuration list for PBXNativeTarget "TridentTests" */;
+			buildPhases = (
+				2628CFFC26350C2F009957E0 /* Sources */,
+				2628CFFD26350C2F009957E0 /* Frameworks */,
+				2628CFFE26350C2F009957E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2628D00326350C2F009957E0 /* PBXTargetDependency */,
+				2628D00526350C2F009957E0 /* PBXTargetDependency */,
+			);
+			name = TridentTests;
+			productName = TridentTests;
+			productReference = 2628D00026350C2F009957E0 /* TridentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF7F9F2F21E37EEC000F4317 /* Build configuration list for PBXNativeTarget "Aquaman-Demo" */;
@@ -263,10 +410,10 @@
 			);
 			dependencies = (
 				2628CFCB26350A04009957E0 /* PBXTargetDependency */,
+				2628D00C26350C2F009957E0 /* PBXTargetDependency */,
 			);
 			name = "Aquaman-Demo";
 			packageProductDependencies = (
-				DF931183250C7D5600870847 /* Trident */,
 			);
 			productName = "Aquaman-Demo";
 			productReference = 2628CFB126350964009957E0 /* Aquaman-Demo.app */;
@@ -289,6 +436,13 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = DF7F9F1C21E37EEB000F4317;
 					};
+					2628CFF726350C2F009957E0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2628CFFF26350C2F009957E0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DF7F9F1C21E37EEB000F4317;
+					};
 					DF7F9F1C21E37EEB000F4317 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -304,7 +458,6 @@
 			);
 			mainGroup = DF7F9F1421E37EEB000F4317;
 			packageReferences = (
-				DF931182250C7D5600870847 /* XCRemoteSwiftPackageReference "Trident" */,
 			);
 			productRefGroup = DF7F9F1421E37EEB000F4317;
 			projectDirPath = "";
@@ -313,6 +466,8 @@
 				DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */,
 				2628CFB626350A03009957E0 /* Aquaman */,
 				2628CFBE26350A04009957E0 /* AquamanTests */,
+				2628CFF726350C2F009957E0 /* Trident */,
+				2628CFFF26350C2F009957E0 /* TridentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -326,6 +481,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2628CFBD26350A04009957E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2628CFF626350C2F009957E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2628CFFE26350C2F009957E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,6 +538,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2628CFF426350C2F009957E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2628D02926350C71009957E0 /* MenuView.swift in Sources */,
+				2628D02226350C71009957E0 /* UIScrollView.swift in Sources */,
+				2628D02726350C71009957E0 /* UIColor+RGB.swift in Sources */,
+				2628D02826350C71009957E0 /* UIFont.swift in Sources */,
+				2628D02626350C71009957E0 /* BottomLineViewStyle.swift in Sources */,
+				2628D02426350C71009957E0 /* MenuItemView.swift in Sources */,
+				2628D02326350C71009957E0 /* ProgressViewStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2628CFFC26350C2F009957E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2628D00826350C2F009957E0 /* TridentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF7F9F1921E37EEB000F4317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +591,21 @@
 			isa = PBXTargetDependency;
 			target = 2628CFB626350A03009957E0 /* Aquaman */;
 			targetProxy = 2628CFCA26350A04009957E0 /* PBXContainerItemProxy */;
+		};
+		2628D00326350C2F009957E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2628CFF726350C2F009957E0 /* Trident */;
+			targetProxy = 2628D00226350C2F009957E0 /* PBXContainerItemProxy */;
+		};
+		2628D00526350C2F009957E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7F9F1C21E37EEB000F4317 /* Aquaman-Demo */;
+			targetProxy = 2628D00426350C2F009957E0 /* PBXContainerItemProxy */;
+		};
+		2628D00C26350C2F009957E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2628CFF726350C2F009957E0 /* Trident */;
+			targetProxy = 2628D00B26350C2F009957E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -506,6 +712,104 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.AquamanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aquaman-Demo.app/Aquaman-Demo";
+			};
+			name = Release;
+		};
+		2628D01026350C2F009957E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D878P8TW6L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Trident/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.Trident;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2628D01126350C2F009957E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D878P8TW6L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Trident/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.Trident;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2628D01326350C2F009957E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D878P8TW6L;
+				INFOPLIST_FILE = TridentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.TridentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aquaman-Demo.app/Aquaman-Demo";
+			};
+			name = Debug;
+		};
+		2628D01426350C2F009957E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D878P8TW6L;
+				INFOPLIST_FILE = TridentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dng.common.TridentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -692,6 +996,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2628D00F26350C2F009957E0 /* Build configuration list for PBXNativeTarget "Trident" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2628D01026350C2F009957E0 /* Debug */,
+				2628D01126350C2F009957E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2628D01226350C2F009957E0 /* Build configuration list for PBXNativeTarget "TridentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2628D01326350C2F009957E0 /* Debug */,
+				2628D01426350C2F009957E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DF7F9F1821E37EEB000F4317 /* Build configuration list for PBXProject "Aquaman-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -711,25 +1033,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DF931182250C7D5600870847 /* XCRemoteSwiftPackageReference "Trident" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bawn/Trident.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DF931183250C7D5600870847 /* Trident */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DF931182250C7D5600870847 /* XCRemoteSwiftPackageReference "Trident" */;
-			productName = Trident;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF7F9F1521E37EEB000F4317 /* Project object */;
 }
