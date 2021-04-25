@@ -1,2 +1,5 @@
 # PagedControllerOnScrollView
-based on Navimark/PagedScrollView
+
+
+
+based on bawn/Aquaman
