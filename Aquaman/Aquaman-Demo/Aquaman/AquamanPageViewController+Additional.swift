@@ -110,8 +110,11 @@ extension AquamanPageViewController {
         let scrollOffset = scrollView.am_originOffset.val
         
         let offsetY = scrollView.contentOffset.y
-        scrollView.contentOffset = scrollOffset
-        if scrollView.am_isCanScroll, offsetY <= scrollOffset.y {
+        
+        if scrollView.am_isCanScroll == false {
+            scrollView.contentOffset = scrollOffset
+        }
+        else if offsetY <= scrollOffset.y {
             scrollView.contentOffset = scrollOffset
             scrollView.am_isCanScroll = false
             mainScrollView.am_isCanScroll = true
