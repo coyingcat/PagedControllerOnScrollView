@@ -445,9 +445,6 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
         return 0
     }
     
-    open func pageController(_ pageController: AquamanPageViewController, mainScrollViewDidScroll scrollView: UIScrollView) {
-        
-    }
     
     open func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidEndScroll scrollView: UIScrollView) {
         

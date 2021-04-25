@@ -129,10 +129,7 @@ class PageViewController: AquamanPageViewController {
         return 0.0
     }
 
-    
-    override func pageController(_ pageController: AquamanPageViewController, mainScrollViewDidScroll scrollView: UIScrollView) {
-        
-    }
+
     
     override func pageController(_ pageController: AquamanPageViewController, contentScrollViewDidScroll scrollView: UIScrollView) {
         menuView.updateLayout(scrollView)
