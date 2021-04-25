@@ -367,7 +367,7 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
     
     internal func contentScrollViewDidEndScroll(_ scrollView: UIScrollView) {
         let scrollViewWidth = scrollView.bounds.width
-        guard scrollViewWidth > 0 else {
+        guard scrollViewWidth > 0, scrollView == contentScrollView else {
             return
         }
         

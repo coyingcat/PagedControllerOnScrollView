@@ -45,6 +45,7 @@ extension AquamanPageViewController: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if scrollView == mainScrollView {
+            // 竖向
             let offsetY = scrollView.contentOffset.y
             if offsetY >= sillValue {
                 scrollView.contentOffset = CGPoint(x: 0, y: sillValue)
@@ -59,7 +60,10 @@ extension AquamanPageViewController: UIScrollViewDelegate {
                 }
             }
         } else {
+            // 横向
+            // menu bar
             pageController(self, contentScrollViewDidScroll: scrollView)
+            // front content page
             layoutChildViewControlls()
         }
     }
