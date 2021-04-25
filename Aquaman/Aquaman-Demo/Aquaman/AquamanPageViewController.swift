@@ -218,25 +218,9 @@ open class AquamanPageViewController: UIViewController, AMPageControllerDataSour
             contentStackView.topAnchor.constraint(equalTo: contentScrollView.topAnchor),
             contentStackView.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor)
         ])
-        
-        
     }
     
-    internal func updateOriginContent() {
-        mainScrollView.headerViewHeight = headerViewHeight
-        mainScrollView.menuViewHeight = menuViewHeight
-        
-        if mainScrollViewConstraints.count == 4 {
-            let contentInset = contentInsetFor(self)
-            mainScrollViewConstraints.first?.constant = contentInset.top
-            mainScrollViewConstraints[1].constant = contentInset.left
-            mainScrollViewConstraints[2].constant = -contentInset.bottom
-            mainScrollViewConstraints.last?.constant = -contentInset.right
-        }
-        headerViewConstraint?.constant = headerViewHeight
-        menuViewConstraint?.constant = menuViewHeight
-        contentScrollViewConstraint?.constant = -menuViewHeight
-    }
+    
     
     internal func clear() {
         childScrollViewObservation?.invalidate()
