@@ -2,20 +2,7 @@
 
 
 
-类似于淘票票首页，抖音、简书个人主页的嵌套滚动库
-
-
-
-## Usage
-
-[English documentation](https://github.com/bawn/Aquaman/blob/master/README-EN.md)
-
-首先需要导入 Aquaman
-
-```
-import Aquaman
-```
-
+类似于淘票票首页，抖音、简书个人主页的嵌套滚动界面
 
 
 #### 创建 AquamanPageViewController 子类
@@ -107,6 +94,12 @@ Follow these 4 steps to run Example project:
 3. Open Aquaman workspace 
 4. Run the Aquaman-Demo project.
 
-### License
+## Usage
 
-Aquaman is released under the MIT license. See LICENSE for details.
+[English documentation](https://github.com/bawn/Aquaman/blob/master/README-EN.md)
+
+首先需要导入 Aquaman
+
+```
+import Aquaman
+```
